@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ProjektZespolowy/!svn/ver/305/ObslugaMagazynu/trunk/ObslugaMagazynuLib
+END
+ISingleton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ProjektZespolowy/!svn/ver/54/ObslugaMagazynu/trunk/ObslugaMagazynuLib/ISingleton.cs
+END
+ListAbstract.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ProjektZespolowy/!svn/ver/97/ObslugaMagazynu/trunk/ObslugaMagazynuLib/ListAbstract.cs
+END
+DictionaryManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ProjektZespolowy/!svn/ver/114/ObslugaMagazynu/trunk/ObslugaMagazynuLib/DictionaryManager.cs
+END
+MySQL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ProjektZespolowy/!svn/ver/147/ObslugaMagazynu/trunk/ObslugaMagazynuLib/MySQL.cs
+END
+PrintManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ProjektZespolowy/!svn/ver/30/ObslugaMagazynu/trunk/ObslugaMagazynuLib/PrintManager.cs
+END
+ConnectionManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ProjektZespolowy/!svn/ver/30/ObslugaMagazynu/trunk/ObslugaMagazynuLib/ConnectionManager.cs
+END
+ObslugaMagazynuLib.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ProjektZespolowy/!svn/ver/268/ObslugaMagazynu/trunk/ObslugaMagazynuLib/ObslugaMagazynuLib.csproj
+END

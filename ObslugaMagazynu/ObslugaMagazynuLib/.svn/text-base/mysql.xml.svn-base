@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mysql>
+  <host>89.73.138.92</host>
+  <user>csharp</user>
+  <password>csharpproject</password>
+  <database>csharp</database>
+</mysql>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mysql>
+  <host>127.0.0.1</host>
+  <user>root</user>
+  <password>Puma2007!</password>
+  <database>magaz</database>
+</mysql>
