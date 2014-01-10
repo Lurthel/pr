@@ -1,0 +1,6 @@
+C:\Users\Sebastian\Desktop\obsluga_magazynu\ObslugaMagazynu\ObslugaMagazynuLib\obj\Debug\ObslugaMagazynuLib.csprojResolveAssemblyReference.cache
+C:\Users\Sebastian\Desktop\obsluga_magazynu\ObslugaMagazynu\ObslugaMagazynuLib\bin\Debug\ObslugaMagazynuLib.dll
+C:\Users\Sebastian\Desktop\obsluga_magazynu\ObslugaMagazynu\ObslugaMagazynuLib\bin\Debug\ObslugaMagazynuLib.pdb
+C:\Users\Sebastian\Desktop\obsluga_magazynu\ObslugaMagazynu\ObslugaMagazynuLib\bin\Debug\MySql.Data.dll
+C:\Users\Sebastian\Desktop\obsluga_magazynu\ObslugaMagazynu\ObslugaMagazynuLib\obj\Debug\ObslugaMagazynuLib.dll
+C:\Users\Sebastian\Desktop\obsluga_magazynu\ObslugaMagazynu\ObslugaMagazynuLib\obj\Debug\ObslugaMagazynuLib.pdb
