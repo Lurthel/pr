@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+  </configSections>
+  <connectionStrings>
+    <add name="csharpEntities" connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=89.73.138.92;User Id=csharp;password=csharpproject;Persist Security Info=True;database=csharp&quot;"
+      providerName="System.Data.EntityClient" />
+    <add name="ObslugaMagazynu.Properties.Settings.csharpConnectionString"
+      connectionString="server=89.73.138.92;User Id=csharp;password=csharpproject;Persist Security Info=True;database=csharp"
+      providerName="MySql.Data.MySqlClient" />
+  </connectionStrings>
+</configuration>

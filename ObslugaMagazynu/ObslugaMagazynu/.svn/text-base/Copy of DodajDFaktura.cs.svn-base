@@ -1,0 +1,107 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using ObslugaMagazynuLib.Dokumenty;
+using ObslugaMagazynuLib.Kontrahenci;
+using ObslugaMagazynu;
+
+
+namespace ObslugaMagazynu
+{
+    public partial class DodajDFaktura : Form
+    {
+        public DodajDFaktura()
+        {
+            InitializeComponent();
+        }
+        DokFaktura editedItem = null;
+
+        public DodajDFaktura(DokFaktura t)
+            : this()
+        {
+            if (t != null)
+            {
+                editedItem = t;
+                textBox1.Text = editedItem.Id.ToString();
+                textBox2.Text = editedItem.Gidnumber.ToString();
+            }
+            button1.Text = "Edytuj";
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBox1.Text == "") throw new Exception("Numer nie może być pusty");
+                if (textBox2.Text == "") throw new Exception("Seria nie może być pusta");
+
+                if (button1.Text == "Dodaj")
+                {
+                    bool flag = true;
+                    DocumentList lista = null;
+                    DokFaktura k = new DokFaktura();
+                    try
+                    {
+
+                        k.Id = textBox1.Text.ToString();
+                        k.Gidnumber = Convert.ToInt32(textBox2.Text.ToString());
+
+                    }
+                    catch (Exception msg)
+                    {
+                        MessageBox.Show(msg.Message.ToString());
+                        flag = false;
+                    }
+                    if (flag)
+                    {
+
+                        if (1 == 1)
+                        {
+                            MessageBox.Show("Dodano kontrahenta!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Nie dodano kontrahenta! Wystąpił niezidentyfikowany błąd");
+                        }
+                        this.Close();
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Błąd! " + err.Message);
+            }
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 chooseClient = new Form2(true);
+            chooseClient.ShowDialog();
+            int clientId = chooseClient.selectedId;
+            ListaKontrahentow listaKontrahentow = ListaKontrahentow.Instance;
+            label5.Text = "Wybrany kontrahent:";
+            label4.Text = listaKontrahentow.Pick(clientId).Nazwa;
+            label6.Text = "ID: " +clientId.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            List<int> chooseProductsList = new List<int>();
+            Towary2 chooseProducts = new Towary2(chooseProductsList);
+            chooseProducts.ShowDialog();
+            label7.Text = "Wybrano produktów";
+            
+        }
+
+
+       
+    }
+}

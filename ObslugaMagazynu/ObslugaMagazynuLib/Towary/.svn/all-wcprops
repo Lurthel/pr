@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ProjektZespolowy/!svn/ver/267/ObslugaMagazynu/trunk/ObslugaMagazynuLib/Towary
+END
+Komplet.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ProjektZespolowy/!svn/ver/157/ObslugaMagazynu/trunk/ObslugaMagazynuLib/Towary/Komplet.cs
+END
+Towar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ProjektZespolowy/!svn/ver/267/ObslugaMagazynu/trunk/ObslugaMagazynuLib/Towary/Towar.cs
+END
+Opakowanie.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ProjektZespolowy/!svn/ver/144/ObslugaMagazynu/trunk/ObslugaMagazynuLib/Towary/Opakowanie.cs
+END
+Grupa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ProjektZespolowy/!svn/ver/214/ObslugaMagazynu/trunk/ObslugaMagazynuLib/Towary/Grupa.cs
+END
+Exception.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ProjektZespolowy/!svn/ver/61/ObslugaMagazynu/trunk/ObslugaMagazynuLib/Towary/Exception.cs
+END
+ListaTowarow.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ProjektZespolowy/!svn/ver/222/ObslugaMagazynu/trunk/ObslugaMagazynuLib/Towary/ListaTowarow.cs
+END
+TowarAbstract.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ProjektZespolowy/!svn/ver/143/ObslugaMagazynu/trunk/ObslugaMagazynuLib/Towary/TowarAbstract.cs
+END
+IFiltr.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ProjektZespolowy/!svn/ver/27/ObslugaMagazynu/trunk/ObslugaMagazynuLib/Towary/IFiltr.cs
+END
+ListaGrup.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ProjektZespolowy/!svn/ver/147/ObslugaMagazynu/trunk/ObslugaMagazynuLib/Towary/ListaGrup.cs
+END
