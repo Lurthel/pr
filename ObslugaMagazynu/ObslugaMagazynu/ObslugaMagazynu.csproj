@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86BC8C19-65AF-4DBE-90CB-F065124B15E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ObslugaMagazynu</RootNamespace>
+    <AssemblyName>ObslugaMagazynu</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>folder-invoices.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.8.3\lib\net40\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DokumentKorekta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DokumentKorekta.Designer.cs">
+      <DependentUpon>DokumentKorekta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajDKorekta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajDKorekta.Designer.cs">
+      <DependentUpon>DodajDKorekta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajDWydanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajDWydanie.Designer.cs">
+      <DependentUpon>DodajDWydanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DokumentWydanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DokumentWydanie.Designer.cs">
+      <DependentUpon>DokumentWydanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DokumentPrzyjecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DokumentPrzyjecie.Designer.cs">
+      <DependentUpon>DokumentPrzyjecie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajDPrzyjecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajDPrzyjecie.Designer.cs">
+      <DependentUpon>DodajDPrzyjecie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajDFaktura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajDFaktura.Designer.cs">
+      <DependentUpon>DodajDFaktura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajUstawienie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajUstawienie.Designer.cs">
+      <DependentUpon>DodajUstawienie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajMagazyn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajMagazyn.Designer.cs">
+      <DependentUpon>DodajMagazyn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DokumentFaktura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DokumentFaktura.Designer.cs">
+      <DependentUpon>DokumentFaktura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grupy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grupy.Designer.cs">
+      <DependentUpon>Grupy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magazyny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magazyny.Designer.cs">
+      <DependentUpon>Magazyny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StawkiVAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StawkiVAT.Designer.cs">
+      <DependentUpon>StawkiVAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajDokumentTyp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajDokumentTyp.Designer.cs">
+      <DependentUpon>DodajDokumentTyp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumenty.Designer.cs">
+      <DependentUpon>Dokumenty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajTowar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajTowar.Designer.cs">
+      <DependentUpon>DodajTowar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Towary2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Towary2.Designer.cs">
+      <DependentUpon>Towary2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajKontrahenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajKontrahenta.Designer.cs">
+      <DependentUpon>DodajKontrahenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbstract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbstract.Designer.cs">
+      <DependentUpon>FormAbstract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DokumentKorekta.resx">
+      <DependentUpon>DokumentKorekta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajDKorekta.resx">
+      <DependentUpon>DodajDKorekta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajDWydanie.resx">
+      <DependentUpon>DodajDWydanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DokumentWydanie.resx">
+      <DependentUpon>DokumentWydanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DokumentPrzyjecie.resx">
+      <DependentUpon>DokumentPrzyjecie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajDPrzyjecie.resx">
+      <DependentUpon>DodajDPrzyjecie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajDFaktura.resx">
+      <DependentUpon>DodajDFaktura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajUstawienie.resx">
+      <DependentUpon>DodajUstawienie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajMagazyn.resx">
+      <DependentUpon>DodajMagazyn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DokumentFaktura.resx">
+      <DependentUpon>DokumentFaktura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grupy.resx">
+      <DependentUpon>Grupy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magazyny.resx">
+      <DependentUpon>Magazyny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StawkiVAT.resx">
+      <DependentUpon>StawkiVAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajDokumentTyp.resx">
+      <DependentUpon>DodajDokumentTyp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumenty.resx">
+      <DependentUpon>Dokumenty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajTowar.resx">
+      <DependentUpon>DodajTowar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Towary2.resx">
+      <DependentUpon>Towary2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajKontrahenta.resx">
+      <DependentUpon>DodajKontrahenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbstract.resx">
+      <DependentUpon>FormAbstract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\csharpEntities.datasource" />
+    <None Include="Properties\DataSources\ObslugaMagazynuLib.Kontrahenci.Kontrahent.datasource" />
+    <None Include="Properties\DataSources\ObslugaMagazynuLib.Kontrahenci.ListaKontrahentow.datasource" />
+    <None Include="Properties\DataSources\ObslugaMagazynuLib.Magazyn.ListaMagazynow.datasource" />
+    <None Include="Properties\DataSources\ObslugaMagazynuLib.Magazyn.Magazyn.datasource" />
+    <None Include="Properties\DataSources\ObslugaMagazynuLib.Towary.Grupa.datasource" />
+    <None Include="Properties\DataSources\ObslugaMagazynuLib.Towary.ListaGrup.datasource" />
+    <None Include="Properties\DataSources\ObslugaMagazynuLib.Towary.ListaTowarow.datasource" />
+    <None Include="Properties\DataSources\ObslugaMagazynuLib.Towary.TowarAbstract.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="folder-invoices.ico" />
+    <Content Include="mysql.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ObslugaMagazynuLib\ObslugaMagazynuLib.csproj">
+      <Project>{86AF9036-236F-4298-A60B-FE7C675D707F}</Project>
+      <Name>ObslugaMagazynuLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

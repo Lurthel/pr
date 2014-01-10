@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ProjektZespolowy/!svn/ver/191/ObslugaMagazynu/trunk/ObslugaMagazynu/Properties/DataSources
+END
+ObslugaMagazynuLib.Magazyn.Magazyn.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/ProjektZespolowy/!svn/ver/140/ObslugaMagazynu/trunk/ObslugaMagazynu/Properties/DataSources/ObslugaMagazynuLib.Magazyn.Magazyn.datasource
+END
+ObslugaMagazynuLib.Magazyn.ListaMagazynow.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/ProjektZespolowy/!svn/ver/140/ObslugaMagazynu/trunk/ObslugaMagazynu/Properties/DataSources/ObslugaMagazynuLib.Magazyn.ListaMagazynow.datasource
+END
+ObslugaMagazynuLib.Towary.ListaGrup.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/ProjektZespolowy/!svn/ver/147/ObslugaMagazynu/trunk/ObslugaMagazynu/Properties/DataSources/ObslugaMagazynuLib.Towary.ListaGrup.datasource
+END
+ObslugaMagazynuLib.Kontrahenci.Kontrahent.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/ProjektZespolowy/!svn/ver/191/ObslugaMagazynu/trunk/ObslugaMagazynu/Properties/DataSources/ObslugaMagazynuLib.Kontrahenci.Kontrahent.datasource
+END
+ObslugaMagazynuLib.Towary.Grupa.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/ProjektZespolowy/!svn/ver/147/ObslugaMagazynu/trunk/ObslugaMagazynu/Properties/DataSources/ObslugaMagazynuLib.Towary.Grupa.datasource
+END
+ObslugaMagazynuLib.Towary.ListaTowarow.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/ProjektZespolowy/!svn/ver/92/ObslugaMagazynu/trunk/ObslugaMagazynu/Properties/DataSources/ObslugaMagazynuLib.Towary.ListaTowarow.datasource
+END
+ObslugaMagazynuLib.Towary.TowarAbstract.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/ProjektZespolowy/!svn/ver/92/ObslugaMagazynu/trunk/ObslugaMagazynu/Properties/DataSources/ObslugaMagazynuLib.Towary.TowarAbstract.datasource
+END
+ObslugaMagazynuLib.Kontrahenci.ListaKontrahentow.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/ProjektZespolowy/!svn/ver/191/ObslugaMagazynu/trunk/ObslugaMagazynu/Properties/DataSources/ObslugaMagazynuLib.Kontrahenci.ListaKontrahentow.datasource
+END
+csharpEntities.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/ProjektZespolowy/!svn/ver/18/ObslugaMagazynu/trunk/ObslugaMagazynu/Properties/DataSources/csharpEntities.datasource
+END

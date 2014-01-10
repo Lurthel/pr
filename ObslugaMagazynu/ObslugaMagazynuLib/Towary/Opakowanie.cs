@@ -1,0 +1,69 @@
+﻿
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+
+namespace ObslugaMagazynuLib.Towary
+{
+    public class Opakowanie : TowarAbstract
+    {
+        protected int ilosc;
+        protected Towar towar;
+        protected List<int> listaTowarow = new List<int>();
+
+        public Opakowanie(string n, double c, int v)
+        {
+            Nazwa = n;
+            Cena = c;
+            Vat = v;
+            Id = 0;
+        }
+
+        public Opakowanie(string n, double c, int v, Towar t, int io)
+            : this(n, c, v)
+        {
+            towarWOpakowaniu = t;
+            iloscWOpakowaniu = io;
+        }
+
+        public Opakowanie(string n, double c, int v, Towar t, int io, string j, string nk, double sm, double s, double mm, int m, int i, Grupa g)
+            : this(n, c, v, t, io)
+        {
+            Jm = j;
+            Nr_kat = nk;
+            Stan_min = sm;
+            Stan = s;
+            Min_marza = mm;
+            Magazyn = m;
+            Id = i;
+            Grupa = g;
+        }
+
+        public virtual Towar towarWOpakowaniu
+        {
+            get
+            {
+                return towar;
+            }
+            set
+            {
+                towar = value;
+            }
+        }
+
+        public virtual int iloscWOpakowaniu
+        {
+            get
+            {
+                return ilosc;
+            }
+            set
+            {
+                ilosc = value;
+            }
+        }
+    }
+}
+
