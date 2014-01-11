@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ObslugaMagazynu</RootNamespace>
     <AssemblyName>ObslugaMagazynu</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -23,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -32,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>folder-invoices.ico</ApplicationIcon>
@@ -41,6 +44,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -118,6 +122,12 @@
     </Compile>
     <Compile Include="Grupy.Designer.cs">
       <DependentUpon>Grupy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogowanieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogowanieForm.Designer.cs">
+      <DependentUpon>LogowanieForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Magazyny.cs">
       <SubType>Form</SubType>
@@ -214,6 +224,9 @@
     <EmbeddedResource Include="Grupy.resx">
       <DependentUpon>Grupy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LogowanieForm.resx">
+      <DependentUpon>LogowanieForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Magazyny.resx">
       <DependentUpon>Magazyny.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,6 +265,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.Config" />
     <None Include="Properties\DataSources\csharpEntities.datasource" />

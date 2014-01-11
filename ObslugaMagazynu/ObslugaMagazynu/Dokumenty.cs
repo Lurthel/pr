@@ -20,10 +20,20 @@ namespace ObslugaMagazynu
         string fakturaTyp;
         public long pesel;
 
+        MySqlConnection conn;
+
         public Dokumenty()
         {
             _option = null;
             InitializeComponent();
+            try
+            {
+                conn = new MySqlConnection("server=127.0.0.1;User Id=root;Password=root;Database=db157392;"); // połączenie z bazą danych
+                conn.Open();
+            }
+            catch (Exception e)
+            {}
+            ;
         }
         public Dokumenty(long pe)
         {
@@ -285,18 +295,39 @@ namespace ObslugaMagazynu
         private void button1_Click(object sender, EventArgs e)
         {
 
+            MySqlCommand command;  // obiekt reprezentujący jedno zapytanie do bazy
 
+            command = new MySqlCommand("SELECT * FROM dokumenty WHERE dokument_id LIKE '%" + szukajT.Text + "%'", conn);  // zapytanie sql pobierające z tabeli testowa_1 wszystkie rekordy
+            //zawierające w dowolnym miejscu pola 'tekst' ciąg wpisany w TextBoxie
 
-
-            string tytul = szukajT.Text; string source = "server=127.0.0.1;User Id=root;database=db157392;password=root"; MySqlConnection conn = new MySqlConnection(source); string sql = "SELECT * FROM dokumenty WHERE dokument_id LIKE '%"+szukajT.Text+"%'";
-            using (MySqlCommand cmm = new MySqlCommand(sql, conn)) { conn.Open(); cmm.Parameters.AddWithValue("@tytul", tytul); MySqlDataReader sdr; sdr = cmm.ExecuteReader(); sdr.Read(); foreach (DataGridViewRow Wiersz in DokumentyTabela.Rows) { if (Convert.ToString(Wiersz.Cells[0]) == szukajT.Text) { Wiersz.DefaultCellStyle.ForeColor = Color.Red; } } sdr.Close(); conn.Close(); }
+            MySqlDataReader dr = command.ExecuteReader();
+            DokumentyTabela.Rows.Clear();
+            int i = 0;
+            while (dr.Read())
+            {
+                foreach (DataGridViewRow Wiersz in DokumentyTabela.Rows)
+                {
+                    if (Convert.ToString(Wiersz.Cells[0]) == szukajT.Text) {{ Wiersz.DefaultCellStyle.ForeColor = Color.Red; } } 
+      
+                }
+            }
+            dr.Close(); conn.Close();  
         }
+
+
+
+            //string tytul = szukajT.Text; string source = "server=127.0.0.1;User Id=root;database=db157392;password=root"; MySqlConnection conn = new MySqlConnection(source); string sql = "SELECT * FROM dokumenty WHERE dokument_id LIKE '%"+szukajT.Text+"%'";
+           // using (MySqlCommand cmm = new MySqlCommand(sql, conn)) { conn.Open(); cmm.Parameters.AddWithValue("@tytul", tytul); MySqlDataReader sdr; sdr = cmm.ExecuteReader(); sdr.Read(); foreach (DataGridViewRow Wiersz in DokumentyTabela.Rows) { if (Convert.ToString(Wiersz.Cells[0]) == szukajT.Text) { Wiersz.DefaultCellStyle.ForeColor = Color.Red; } } sdr.Close(); conn.Close(); }
+        
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
-
         
-    }
+        
+            
+        }
 }
+    
+

@@ -11,7 +11,7 @@ using ObslugaMagazynuLib.Towary;
 
 namespace ObslugaMagazynu
 {
-    public partial class Form1 : FormAbstract
+    public partial class Form1 : FormAbstract 
     {
         public Form1()
         {
@@ -57,6 +57,11 @@ namespace ObslugaMagazynu
 
 
 
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+           
         }
 
        
