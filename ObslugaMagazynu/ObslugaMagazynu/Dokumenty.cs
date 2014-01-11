@@ -284,7 +284,11 @@ namespace ObslugaMagazynu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string tytul = szukajT.Text; string source = "Data Source=.\\SQLEXPRESS;Initial Catalog=Nowy;Integrated Security=True"; MySqlConnection conn = new MySqlConnection(source); string sql = "SELECT tytul FROM zamo WHERE zamo.tytul = @tytul";
+
+
+
+
+            string tytul = szukajT.Text; string source = "server=127.0.0.1;User Id=root;database=db157392;password=root"; MySqlConnection conn = new MySqlConnection(source); string sql = "SELECT * FROM dokumenty WHERE dokument_id LIKE '%"+szukajT.Text+"%'";
             using (MySqlCommand cmm = new MySqlCommand(sql, conn)) { conn.Open(); cmm.Parameters.AddWithValue("@tytul", tytul); MySqlDataReader sdr; sdr = cmm.ExecuteReader(); sdr.Read(); foreach (DataGridViewRow Wiersz in DokumentyTabela.Rows) { if (Convert.ToString(Wiersz.Cells[0]) == szukajT.Text) { Wiersz.DefaultCellStyle.ForeColor = Color.Red; } } sdr.Close(); conn.Close(); }
         }
 
