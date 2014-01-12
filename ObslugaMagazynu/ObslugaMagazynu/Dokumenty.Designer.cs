@@ -37,6 +37,7 @@
             this.Usun = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dokumentyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.szukajT = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -118,6 +119,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.szukajT);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button3);
@@ -130,6 +132,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opcje";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(566, 28);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(169, 23);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "Wyczysc wyszukiwanie";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // szukajT
             // 
@@ -144,7 +156,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
+            this.button1.Text = "Szukaj";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -219,6 +231,7 @@
         private System.Windows.Forms.DataGridViewButtonColumn Usun;
         private System.Windows.Forms.TextBox szukajT;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button4;
 
 
     }

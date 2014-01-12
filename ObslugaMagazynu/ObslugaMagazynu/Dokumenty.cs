@@ -294,24 +294,26 @@ namespace ObslugaMagazynu
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            string searchValue = szukajT.Text;
 
-            MySqlCommand command;  // obiekt reprezentujący jedno zapytanie do bazy
-
-            command = new MySqlCommand("SELECT * FROM dokumenty WHERE dokument_id LIKE '%" + szukajT.Text + "%'", conn);  // zapytanie sql pobierające z tabeli testowa_1 wszystkie rekordy
-            //zawierające w dowolnym miejscu pola 'tekst' ciąg wpisany w TextBoxie
-
-            MySqlDataReader dr = command.ExecuteReader();
-            DokumentyTabela.Rows.Clear();
-            int i = 0;
-            while (dr.Read())
+            DokumentyTabela.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            try
             {
-                foreach (DataGridViewRow Wiersz in DokumentyTabela.Rows)
+                foreach (DataGridViewRow row in DokumentyTabela.Rows)
                 {
-                    if (Convert.ToString(Wiersz.Cells[0]) == szukajT.Text) {{ Wiersz.DefaultCellStyle.ForeColor = Color.Red; } } 
-      
+                    row.Selected = false;
+                    if (row.Cells[4].Value.ToString().Equals(searchValue))
+                    {
+                        row.Selected = true;
+                        break;
+                    }
                 }
             }
-            dr.Close(); conn.Close();  
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
         }
 
 
@@ -322,6 +324,15 @@ namespace ObslugaMagazynu
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in DokumentyTabela.Rows)
+            {
+                row.Selected = false;
+            }
 
         }
         

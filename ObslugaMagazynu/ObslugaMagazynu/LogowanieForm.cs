@@ -62,5 +62,10 @@ namespace ObslugaMagazynu
                 return false;
 
         }
+
+        private void LogowanieForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
