@@ -30,10 +30,7 @@ namespace ObslugaMagazynu
         public bool SprawdzNazweiHaslo(string uzytkownik, string haslo)
         {
 
-            //if (uzytkownik == "admin" & haslo == "admin")
-            //    return true;
-            //else
-            //    return false;
+
             uzytkownik = loginbox.Text; string source = "server=sql.elewarr.nazwa.pl;User Id=elewarr_7;database=elewarr_7;port=3307;password=magazynsggw1AB";
             MySqlConnection conn = new MySqlConnection(source);
             string sql = "SELECT * FROM logowanie WHERE login LIKE '" + uzytkownik + "'AND haslo LIKE '" + haslo + "'";
