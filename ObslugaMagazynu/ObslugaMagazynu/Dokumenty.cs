@@ -300,6 +300,7 @@ namespace ObslugaMagazynu
             DokumentyTabela.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             try
             {
+
                 foreach (DataGridViewRow row in DokumentyTabela.Rows)
                 {
                     row.Selected = false;
@@ -309,10 +310,13 @@ namespace ObslugaMagazynu
                         break;
                     }
                 }
+             
+
             }
             catch (Exception exc)
             {
-                MessageBox.Show(exc.Message);
+               
+               MessageBox.Show("Brak dokumentu w bazie. Sprawdż czy poprawnie wpisałes numer dokumentu !!!");
             }
         }
 

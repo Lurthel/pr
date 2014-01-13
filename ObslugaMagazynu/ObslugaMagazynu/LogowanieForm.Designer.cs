@@ -90,7 +90,7 @@
             this.Controls.Add(this.label1);
             this.Name = "LogowanieForm";
             this.Text = "Magazyn - Logowanie";
-            this.Load += new System.EventHandler(this.LogowanieForm_Load);
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 

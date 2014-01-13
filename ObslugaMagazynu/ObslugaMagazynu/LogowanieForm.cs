@@ -15,11 +15,13 @@ namespace ObslugaMagazynu
         public LogowanieForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         public void frmNewFormThread()
     {
 
         Application.Run(new Form1());
+     
 
     }
 
@@ -63,9 +65,6 @@ namespace ObslugaMagazynu
 
         }
 
-        private void LogowanieForm_Load(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

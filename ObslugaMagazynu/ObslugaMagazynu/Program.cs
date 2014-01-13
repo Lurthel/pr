@@ -19,6 +19,7 @@ namespace ObslugaMagazynu
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LogowanieForm());
 
+
                 
             
         }
