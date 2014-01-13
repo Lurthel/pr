@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
+using MySql.Data.MySqlClient;
+using System.Xml;
+using ObslugaMagazynuLib;
 using System.Windows.Forms;
 
 
@@ -24,15 +24,57 @@ namespace ObslugaMagazynu
      
 
     }
+        string linia;
+        string linia2;
 
-        
         public bool SprawdzNazweiHaslo(string uzytkownik, string haslo)
         {
-            if (uzytkownik == "admin" & haslo == "admin")
-                return true;
+
+            //if (uzytkownik == "admin" & haslo == "admin")
+            //    return true;
+            //else
+            //    return false;
+            uzytkownik = loginbox.Text; string source = "server=sql.elewarr.nazwa.pl;User Id=elewarr_7;database=elewarr_7;port=3307;password=magazynsggw1AB";
+            MySqlConnection conn = new MySqlConnection(source);
+            string sql = "SELECT * FROM logowanie WHERE login LIKE '" + uzytkownik + "'AND haslo LIKE '" + haslo + "'";
+            using (MySqlCommand cmm = new MySqlCommand(sql, conn))
+            {
+                conn.Open();
+                cmm.Parameters.AddWithValue("@login", uzytkownik);
+                MySqlDataReader sdr; sdr = cmm.ExecuteReader();
+                while (sdr.Read())
+                {
+
+
+                    linia = (sdr.GetString(0));
+
+                }
+
+
+                sdr.Close();
+
+                cmm.Parameters.AddWithValue("@haslo", haslo);
+                MySqlDataReader sdr2; sdr2 = cmm.ExecuteReader();
+                while (sdr2.Read())
+                {
+
+
+                    linia2 = (sdr2.GetString(0));
+
+                }
+
+                sdr2.Close(); conn.Close();
+            }
+
+
+            if (linia == uzytkownik)
+            { }
+            if (linia2 == haslo)
+            { return true; }
             else
                 return false;
-           
+
+
         }
 
         private void LogowanieForm_KeyDown(object sender, KeyEventArgs e)
