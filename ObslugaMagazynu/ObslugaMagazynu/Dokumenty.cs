@@ -294,31 +294,33 @@ namespace ObslugaMagazynu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            string searchValue = szukajT.Text;
-
-            DokumentyTabela.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            try
+            int w = 0;
+             string szukaj = szukajT.Text;
+            if (DokumentyTabela.Rows.Count >0)
             {
-
-                foreach (DataGridViewRow row in DokumentyTabela.Rows)
+                for (int i = 0; i < DokumentyTabela.Rows.Count - 1; i++)
                 {
-                    row.Selected = false;
-                    if (row.Cells[4].Value.ToString().Equals(searchValue))
+                    for (int j = 4; j < 8; j++)
                     {
-                        row.Selected = true;
-                        break;
+                        if (DokumentyTabela.Rows[i].Cells[j].Value.ToString().ToLower() == szukaj.ToLower())
+                        {
+                            DokumentyTabela.Rows[i].Selected = true;
+                            w = w + 1;
+                            break;
+                        }
                     }
+
                 }
+                
+            }
+                 if(w==0)
+                 {
+                     MessageBox.Show("Brak dokumenty w bazie.Sprawdz czy poprawnie wprowadziłes dane", "Błąd wyszukiwania");
+                 }
              
 
             }
-            catch (Exception exc)
-            {
-               
-               MessageBox.Show("Brak dokumentu w bazie. Sprawdż czy poprawnie wpisałes numer dokumentu !!!");
-            }
-        }
+           
 
 
 

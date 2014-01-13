@@ -45,12 +45,15 @@
             this.grupaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listaTowarowBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.SzukajT = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button4 = new System.Windows.Forms.Button();
-            this.szukajT = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TowaryTabela)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaTowarowBindingSource)).BeginInit();
@@ -69,7 +72,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1029, 383);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(998, 325);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // TowaryTabela
@@ -94,9 +97,8 @@
             this.TowaryTabela.DataSource = this.listaTowarowBindingSource;
             this.TowaryTabela.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TowaryTabela.Location = new System.Drawing.Point(3, 3);
-            this.TowaryTabela.MultiSelect = false;
             this.TowaryTabela.Name = "TowaryTabela";
-            this.TowaryTabela.Size = new System.Drawing.Size(1023, 327);
+            this.TowaryTabela.Size = new System.Drawing.Size(992, 269);
             this.TowaryTabela.TabIndex = 3;
             this.TowaryTabela.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -202,18 +204,49 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.szukajT);
-            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.button5);
+            this.groupBox1.Controls.Add(this.SzukajT);
+            this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(3, 336);
+            this.groupBox1.Location = new System.Drawing.Point(3, 278);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1023, 44);
+            this.groupBox1.Size = new System.Drawing.Size(992, 44);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opcje";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(642, 13);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(169, 23);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "Wyczysc wyszukiwanie";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // SzukajT
+            // 
+            this.SzukajT.Location = new System.Drawing.Point(356, 8);
+            this.SzukajT.Name = "SzukajT";
+            this.SzukajT.Size = new System.Drawing.Size(180, 20);
+            this.SzukajT.TabIndex = 9;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(542, 12);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Szukaj";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button3
             // 
@@ -251,34 +284,36 @@
             this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.button1_Click);
             // 
-            // button4
+            // label1
             // 
-            this.button4.Location = new System.Drawing.Point(666, 15);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(439, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "0";
             // 
-            // szukajT
+            // label2
             // 
-            this.szukajT.Location = new System.Drawing.Point(450, 12);
-            this.szukajT.Name = "szukajT";
-            this.szukajT.Size = new System.Drawing.Size(178, 20);
-            this.szukajT.TabIndex = 7;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(322, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Wynik wyszukiwania :";
             // 
             // Towary2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 407);
+            this.ClientSize = new System.Drawing.Size(998, 349);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
             this.Name = "Towary2";
             this.Text = "Towary";
             this.Load += new System.EventHandler(this.Towary2_Load);
             this.Shown += new System.EventHandler(this.Towary2_Shown);
+            
             this.Controls.SetChildIndex(this.tableLayoutPanel1, 0);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TowaryTabela)).EndInit();
@@ -312,8 +347,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn vatDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn grupaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.TextBox szukajT;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox SzukajT;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
 
 
     }

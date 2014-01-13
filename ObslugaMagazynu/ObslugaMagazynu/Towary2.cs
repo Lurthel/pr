@@ -130,26 +130,49 @@ namespace ObslugaMagazynu
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+      
+
+        private void button6_Click(object sender, EventArgs e)
         {
-            string szukaj = szukajT.Text;
-            if (TowaryTabela.Rows.Count >0)
+            int w = 0;
+            string szukaj = SzukajT.Text;
+            if (TowaryTabela.Rows.Count > 0)
             {
-                for (int i = 3; i < TowaryTabela.Rows.Count - 1; i++)
+                for (int i = 0; i < TowaryTabela.Rows.Count - 1; i++)
                 {
-                    for (int j = 0; j < 4; j++)
+                    for (int j = 4; j < 12; j++)
                     {
-                        if (TowaryTabela.Rows[i].Cells[j].Value.ToString() == szukaj)
+                        if (TowaryTabela.Rows[i].Cells[j].Value.ToString().ToLower() == szukaj.ToLower())
                         {
                             TowaryTabela.Rows[i].Selected = true;
-
+                            w = w + 1;
                             break;
                         }
                     }
 
                 }
             }
+            label1.Text = w.ToString();
+            if (w == 0)
+            {
+                MessageBox.Show("Brak dokumenty w bazie.Sprawdz czy poprawnie wprowadziłes dane", "Błąd wyszukiwania");
+            }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in TowaryTabela.Rows)
+            {
+                row.Selected = false;
+            }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+       
         
     }
 }
