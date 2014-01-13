@@ -33,6 +33,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazwaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jmDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nrkatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.towarAbstractBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,13 +48,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nazwaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jmDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nrkatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.drukujbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.towarAbstractBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -101,6 +102,57 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(683, 295);
             this.dataGridView1.TabIndex = 13;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // Stan
+            // 
+            this.Stan.DataPropertyName = "Stan";
+            this.Stan.HeaderText = "Wydano";
+            this.Stan.Name = "Stan";
+            this.Stan.ReadOnly = true;
+            // 
+            // nazwaDataGridViewTextBoxColumn
+            // 
+            this.nazwaDataGridViewTextBoxColumn.DataPropertyName = "Nazwa";
+            this.nazwaDataGridViewTextBoxColumn.HeaderText = "Nazwa";
+            this.nazwaDataGridViewTextBoxColumn.Name = "nazwaDataGridViewTextBoxColumn";
+            this.nazwaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // jmDataGridViewTextBoxColumn
+            // 
+            this.jmDataGridViewTextBoxColumn.DataPropertyName = "Jm";
+            this.jmDataGridViewTextBoxColumn.HeaderText = "Jm";
+            this.jmDataGridViewTextBoxColumn.Name = "jmDataGridViewTextBoxColumn";
+            this.jmDataGridViewTextBoxColumn.ReadOnly = true;
+            this.jmDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // nrkatDataGridViewTextBoxColumn
+            // 
+            this.nrkatDataGridViewTextBoxColumn.DataPropertyName = "Nr_kat";
+            this.nrkatDataGridViewTextBoxColumn.HeaderText = "Nr_kat";
+            this.nrkatDataGridViewTextBoxColumn.Name = "nrkatDataGridViewTextBoxColumn";
+            this.nrkatDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cenaDataGridViewTextBoxColumn
+            // 
+            this.cenaDataGridViewTextBoxColumn.DataPropertyName = "Cena";
+            this.cenaDataGridViewTextBoxColumn.HeaderText = "Cena";
+            this.cenaDataGridViewTextBoxColumn.Name = "cenaDataGridViewTextBoxColumn";
+            this.cenaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // vatDataGridViewTextBoxColumn
+            // 
+            this.vatDataGridViewTextBoxColumn.DataPropertyName = "Vat";
+            this.vatDataGridViewTextBoxColumn.HeaderText = "Vat";
+            this.vatDataGridViewTextBoxColumn.Name = "vatDataGridViewTextBoxColumn";
+            this.vatDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // towarAbstractBindingSource
             // 
@@ -172,62 +224,22 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "Nabywca:";
             // 
-            // idDataGridViewTextBoxColumn
+            // drukujbutton
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // Stan
-            // 
-            this.Stan.DataPropertyName = "Stan";
-            this.Stan.HeaderText = "Wydano";
-            this.Stan.Name = "Stan";
-            this.Stan.ReadOnly = true;
-            // 
-            // nazwaDataGridViewTextBoxColumn
-            // 
-            this.nazwaDataGridViewTextBoxColumn.DataPropertyName = "Nazwa";
-            this.nazwaDataGridViewTextBoxColumn.HeaderText = "Nazwa";
-            this.nazwaDataGridViewTextBoxColumn.Name = "nazwaDataGridViewTextBoxColumn";
-            this.nazwaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // jmDataGridViewTextBoxColumn
-            // 
-            this.jmDataGridViewTextBoxColumn.DataPropertyName = "Jm";
-            this.jmDataGridViewTextBoxColumn.HeaderText = "Jm";
-            this.jmDataGridViewTextBoxColumn.Name = "jmDataGridViewTextBoxColumn";
-            this.jmDataGridViewTextBoxColumn.ReadOnly = true;
-            this.jmDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // nrkatDataGridViewTextBoxColumn
-            // 
-            this.nrkatDataGridViewTextBoxColumn.DataPropertyName = "Nr_kat";
-            this.nrkatDataGridViewTextBoxColumn.HeaderText = "Nr_kat";
-            this.nrkatDataGridViewTextBoxColumn.Name = "nrkatDataGridViewTextBoxColumn";
-            this.nrkatDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cenaDataGridViewTextBoxColumn
-            // 
-            this.cenaDataGridViewTextBoxColumn.DataPropertyName = "Cena";
-            this.cenaDataGridViewTextBoxColumn.HeaderText = "Cena";
-            this.cenaDataGridViewTextBoxColumn.Name = "cenaDataGridViewTextBoxColumn";
-            this.cenaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // vatDataGridViewTextBoxColumn
-            // 
-            this.vatDataGridViewTextBoxColumn.DataPropertyName = "Vat";
-            this.vatDataGridViewTextBoxColumn.HeaderText = "Vat";
-            this.vatDataGridViewTextBoxColumn.Name = "vatDataGridViewTextBoxColumn";
-            this.vatDataGridViewTextBoxColumn.ReadOnly = true;
+            this.drukujbutton.Location = new System.Drawing.Point(652, 37);
+            this.drukujbutton.Name = "drukujbutton";
+            this.drukujbutton.Size = new System.Drawing.Size(75, 23);
+            this.drukujbutton.TabIndex = 19;
+            this.drukujbutton.Text = "Drukuj";
+            this.drukujbutton.UseVisualStyleBackColor = true;
+            this.drukujbutton.Click += new System.EventHandler(this.drukujbutton_Click);
             // 
             // DokumentWydanie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 591);
+            this.Controls.Add(this.drukujbutton);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -270,5 +282,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button drukujbutton;
     }
 }

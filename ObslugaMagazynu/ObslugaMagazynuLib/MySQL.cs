@@ -34,6 +34,7 @@ namespace ObslugaMagazynuLib
         private string user;
         private string database;
         private string password;
+        private string port;
 
         private string connectionString = null;
 
@@ -68,8 +69,13 @@ namespace ObslugaMagazynuLib
                     reader.Read();
                     password = reader.Value.ToString();
                 }
+                else if (reader.Name.Equals("port"))
+                {
+                    reader.Read();
+                    port = reader.Value.ToString();
+                }
             }
-            connectionString = "server=" + host + ";User Id=" + user + ";database=" + database + ";password=" + password + "";
+            connectionString = "server=" + host + ";port=" + port + ";User Id=" + user + ";database=" + database + ";password=" + password + "";
         }
 
         public static MySQL Instance

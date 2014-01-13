@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <mysql>
-  <host>127.0.0.1</host>
-  <user>root</user>
-  <password>Puma2007!</password>
-  <database>magaz</database>
+  <host>sql.elewarr.nazwa.pl</host>
+  <user>elewarr_7</user>
+  <password>magazynsggw1AB</password>
+  <database>elewarr_7</database>
+  <port>3307</port>
 </mysql>

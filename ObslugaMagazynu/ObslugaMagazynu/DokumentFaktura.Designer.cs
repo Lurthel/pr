@@ -43,7 +43,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.towarAbstractBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Stan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazwaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +50,8 @@
             this.nrkatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.towarAbstractBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.drukujbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.towarAbstractBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -197,10 +198,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(690, 248);
             this.dataGridView1.TabIndex = 13;
             // 
-            // towarAbstractBindingSource
-            // 
-            this.towarAbstractBindingSource.DataSource = typeof(ObslugaMagazynuLib.Towary.TowarAbstract);
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -254,11 +251,26 @@
             this.vatDataGridViewTextBoxColumn.Name = "vatDataGridViewTextBoxColumn";
             this.vatDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // towarAbstractBindingSource
+            // 
+            this.towarAbstractBindingSource.DataSource = typeof(ObslugaMagazynuLib.Towary.TowarAbstract);
+            // 
+            // drukujbutton
+            // 
+            this.drukujbutton.Location = new System.Drawing.Point(647, 22);
+            this.drukujbutton.Name = "drukujbutton";
+            this.drukujbutton.Size = new System.Drawing.Size(75, 23);
+            this.drukujbutton.TabIndex = 14;
+            this.drukujbutton.Text = "Drukuj";
+            this.drukujbutton.UseVisualStyleBackColor = true;
+            this.drukujbutton.Click += new System.EventHandler(this.drukujbutton_Click);
+            // 
             // DokumentFaktura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 591);
+            this.Controls.Add(this.drukujbutton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -307,5 +319,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nrkatDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cenaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button drukujbutton;
     }
 }
