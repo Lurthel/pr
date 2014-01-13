@@ -25,19 +25,57 @@ namespace ObslugaMagazynu
 
     }
 
-        private void zalogujbutton_Click(object sender, EventArgs e)
+        
+        public bool SprawdzNazweiHaslo(string uzytkownik, string haslo)
+        {
+            if (uzytkownik == "admin" & haslo == "admin")
+                return true;
+            else
+                return false;
+           
+        }
+
+        private void LogowanieForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            string uzytkownik = this.loginbox.Text;
+            string haslo = this.haslobox.Text;
+                
+                if (e.KeyCode == Keys.Return)
+                {
+
+
+                    if (SprawdzNazweiHaslo(uzytkownik, haslo))
+                    {
+                        
+                        System.Threading.Thread newThread;
+                        Form1 frmNewForm = new Form1();
+
+                        newThread = new System.Threading.Thread(new System.Threading.ThreadStart(frmNewFormThread));
+                        this.Close();
+                        newThread.SetApartmentState(System.Threading.ApartmentState.STA);
+                        newThread.Start();
+
+
+
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Niepoprawna nazwa użytkownika lub hasło", "Błąd logowania");
+                        return;
+                    }
+                }
+            
+        }
+
+        private void zalogujbutton_Click_1(object sender, EventArgs e)
         {
             string uzytkownik = this.loginbox.Text;
             string haslo = this.haslobox.Text;
 
             if (SprawdzNazweiHaslo(uzytkownik, haslo))
             {
-                //MessageBox.Show("Jest w systemie", "Zaalogowano");
-                  //  this.Hide();
-                // dalej tutaj mozecie tworzyc nowe formularze i dalsza czesc programu ...
-                   // Form1 fr = new Form1();
-                   // fr.Show();
-
+               
                 System.Threading.Thread newThread;
                 Form1 frmNewForm = new Form1();
 
@@ -46,25 +84,28 @@ namespace ObslugaMagazynu
                 newThread.SetApartmentState(System.Threading.ApartmentState.STA);
                 newThread.Start();
 
-                    
-               
-                
+
+
+
             }
             else
             {
                 MessageBox.Show("Niepoprawna nazwa użytkownika lub hasło", "Błąd logowania");
                 return;
             }
-        }
-        public bool SprawdzNazweiHaslo(string uzytkownik, string haslo)
-        {
-            if (uzytkownik == "admin" & haslo == "admin")
-                return true;
-            else
-                return false;
 
         }
 
+        
+
+       
+    
+
+      
+
+    
+
+       
       
     }
 }

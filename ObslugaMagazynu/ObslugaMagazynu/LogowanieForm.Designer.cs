@@ -76,7 +76,7 @@
             this.zalogujbutton.TabIndex = 4;
             this.zalogujbutton.Text = "Zaloguj";
             this.zalogujbutton.UseVisualStyleBackColor = true;
-            this.zalogujbutton.Click += new System.EventHandler(this.zalogujbutton_Click);
+            this.zalogujbutton.Click += new System.EventHandler(this.zalogujbutton_Click_1);
             // 
             // LogowanieForm
             // 
@@ -88,9 +88,10 @@
             this.Controls.Add(this.loginbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.KeyPreview = true;
             this.Name = "LogowanieForm";
             this.Text = "Magazyn - Logowanie";
-            
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LogowanieForm_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
