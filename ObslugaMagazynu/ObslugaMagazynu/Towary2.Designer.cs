@@ -45,6 +45,11 @@
             this.grupaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listaTowarowBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.StanT = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.SzukajT = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -52,8 +57,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TowaryTabela)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaTowarowBindingSource)).BeginInit();
@@ -204,6 +207,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.StanT);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.button5);
@@ -221,11 +227,55 @@
             this.groupBox1.Text = "Opcje";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(313, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(127, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Wyszukaj braki w stanie :";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(525, 23);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(126, 23);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "Sprawdz";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // StanT
+            // 
+            this.StanT.Location = new System.Drawing.Point(446, 27);
+            this.StanT.Name = "StanT";
+            this.StanT.Size = new System.Drawing.Size(73, 20);
+            this.StanT.TabIndex = 13;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(657, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Wynik wyszukiwania :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(770, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "0";
+            // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(642, 13);
+            this.button5.Location = new System.Drawing.Point(657, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(169, 23);
+            this.button5.Size = new System.Drawing.Size(126, 23);
             this.button5.TabIndex = 10;
             this.button5.Text = "Wyczysc wyszukiwanie";
             this.button5.UseVisualStyleBackColor = true;
@@ -233,16 +283,16 @@
             // 
             // SzukajT
             // 
-            this.SzukajT.Location = new System.Drawing.Point(356, 8);
+            this.SzukajT.Location = new System.Drawing.Point(339, 2);
             this.SzukajT.Name = "SzukajT";
             this.SzukajT.Size = new System.Drawing.Size(180, 20);
             this.SzukajT.TabIndex = 9;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(542, 12);
+            this.button6.Location = new System.Drawing.Point(525, 0);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(126, 23);
             this.button6.TabIndex = 8;
             this.button6.Text = "Szukaj";
             this.button6.UseVisualStyleBackColor = true;
@@ -260,7 +310,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(906, 12);
+            this.button1.Location = new System.Drawing.Point(884, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 23);
             this.button1.TabIndex = 4;
@@ -284,24 +334,6 @@
             this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.button1_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(439, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(322, 33);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Wynik wyszukiwania :";
-            // 
             // Towary2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,7 +345,6 @@
             this.Text = "Towary";
             this.Load += new System.EventHandler(this.Towary2_Load);
             this.Shown += new System.EventHandler(this.Towary2_Shown);
-            
             this.Controls.SetChildIndex(this.tableLayoutPanel1, 0);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TowaryTabela)).EndInit();
@@ -352,6 +383,9 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox StanT;
 
 
     }
