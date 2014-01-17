@@ -81,7 +81,7 @@ namespace ObslugaMagazynu
 
             if (typ == "Zwrot")
             {
-                label1.Text = "ZWROT FAKTYURY";
+                label1.Text = "ZWROT FAKTURY";
                 this.Text = "Zwrot Faktury";
             }
 
@@ -109,13 +109,13 @@ namespace ObslugaMagazynu
             var wScale = e.MarginBounds.Width / (float)img.Width;
             var hScale = e.MarginBounds.Height / (float)img.Height;
 
-            // choose the smaller of the two scales
+            
             var scale = wScale < hScale ? wScale : hScale;
 
-            // apply scaling to the image
+            
             e.Graphics.ScaleTransform(scale, scale);
 
-            // print to default printer's page
+            
             e.Graphics.DrawImage(img, 0, 0);
 
             this.DrawToBitmap(img, bounds);
