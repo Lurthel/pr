@@ -29,7 +29,7 @@ namespace ObslugaMagazynu
             dataGridView1.DataSource = lista.getBindingSource();
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-               // row.Cells["usun"].
+            
             }
          
 

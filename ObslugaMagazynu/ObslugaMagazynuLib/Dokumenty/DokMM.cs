@@ -7,7 +7,7 @@ using ObslugaMagazynuLib.Towary;
 
 namespace ObslugaMagazynuLib.Dokumenty
 {
-    //przesuniecie miedzymagazynowe
+   
     public class DokMM : Document
     {
         private string _magDoc;

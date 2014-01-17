@@ -96,5 +96,10 @@ namespace ObslugaMagazynu
         {
             (new Grupy()).ShowDialog();
         }
+
+        private void FormAbstract_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -41,7 +41,7 @@ namespace ObslugaMagazynu
         {
 
             fakturaData = faktura.ShowItem(documentId, DokType.FA);
-            //label2.Text = fakturaData.Type + "/" + fakturaData.Year + "/" + fakturaData.Series;
+          
             label2.Text = "K" + fakturaData.GIDNumer;
 
             label5.Text = cName;

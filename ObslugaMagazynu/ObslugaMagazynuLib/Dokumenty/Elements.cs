@@ -7,7 +7,7 @@ using ObslugaMagazynuLib.Towary;
 
 namespace ObslugaMagazynuLib.Dokumenty
 {
-    public class Elements //: ListAbstract<Element>
+    public class Elements
     {
         public List<TowarAbstract> _towarList = new List<TowarAbstract>();
 

@@ -37,7 +37,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>folder-invoices.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
@@ -98,12 +99,6 @@
     </Compile>
     <Compile Include="DodajDFaktura.Designer.cs">
       <DependentUpon>DodajDFaktura.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DodajUstawienie.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DodajUstawienie.Designer.cs">
-      <DependentUpon>DodajUstawienie.cs</DependentUpon>
     </Compile>
     <Compile Include="DodajMagazyn.cs">
       <SubType>Form</SubType>
@@ -212,9 +207,6 @@
     <EmbeddedResource Include="DodajDFaktura.resx">
       <DependentUpon>DodajDFaktura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DodajUstawienie.resx">
-      <DependentUpon>DodajUstawienie.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DodajMagazyn.resx">
       <DependentUpon>DodajMagazyn.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,7 +280,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="folder-invoices.ico" />
     <Content Include="mysql.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -10,17 +10,12 @@ using System.Windows.Forms;
 
 namespace ObslugaMagazynuLib
 {
-    /// <summary>
-    /// Klasa do obslugi bazy MySQL
-    /// </summary>
-    /// <!-- Author: Adrian Ludwig -->
+   
 
     sealed class  MySQL : ISingleton
     {
         private static MySQL _instance = null;
-        // classa realizujaca polaczenia z baza mysql, 
-        // troche tutaj jest syfu no ale coz.. nie ona jest najwazniejsza
-
+  
         private bool debug = true;
 
         private MySqlCommand Command = null;
@@ -40,7 +35,7 @@ namespace ObslugaMagazynuLib
 
         private MySQL()
         {
-            // przy pierwszy odwolaniu do obiektu wykona sie ten kod.
+           
             XmlReader reader = XmlReader.Create("mysql.xml");
             reader.Read();
             while (reader.Read())
@@ -121,7 +116,7 @@ namespace ObslugaMagazynuLib
 
                     try
                     {
-                        _connections[ident].Open(); // nie ma jak sprawdzicz czy polaczenie jest wlaczone.
+                        _connections[ident].Open(); 
                     }
                     catch { }
 

@@ -16,7 +16,7 @@ namespace ObslugaMagazynu
         public Form2()
         {
             InitializeComponent();
-            //dataGridView1.Columns["Faktury"].Visible = false;
+
             Form2_Load(this, null);
         }
 
@@ -41,7 +41,7 @@ namespace ObslugaMagazynu
             dataGridView1.DataSource = lista.getBindingSource();
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                // row.Cells["usun"].
+               
             }
         }
 
